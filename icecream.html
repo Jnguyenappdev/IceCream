@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ice Cream</title>
+    <link src="stylesheet.css" />
+  </head>
+  <body>
+    <h1>Ice Cream Ordering</h1>
+    <div id="scoops">
+      <label for="numberScoops">
+        Number of scoops:
+        <input id="numScoops" type="number" min="1" max="4" required
+      /></label>
+    </div>
+    <div id="coneCup">
+      <fieldset>
+        <input type="radio" id="cone" name="radio" value="cone" checked />
+        <label for="cone">Cone</label>
+        <input type="radio" id="cup" name="radio" value="cup" checked />
+        <label for="cup">Cup</label>
+      </fieldset>
+    </div>
+    <div id="toppings">
+      <ledgend>Toppings</ledgend>
+      <fieldset>
+        <input
+          id="sprinkles"
+          type="checkbox"
+          name="sprinkles"
+          value="sprinkles"
+        />
+        <label for="sprinkles">Sprinkles ($0.50) </label>
+        <input
+          id="whippedCream"
+          type="checkbox"
+          name="whippedCream"
+          value="whippedCream"
+        />
+        <label for="whippedCream">Whipped Cream ($0.25) </label>
+        <input id="hotFudge" type="checkbox" name="hotFudge" value="hotFudge" />
+        <label for="hotFudge">Hot Fudge ($1.25)</label>
+        <input id="cherry" type="checkbox" name="cherry" value="cherry" />
+        <label for="cherry">Cherry ($0.25) </label>
+      </fieldset>
+    </div>
+    <div id="btn">
+      <button id="submitOrder">Submit Order</button>
+    </div>
+    <div id="table">
+      <table>
+        <tr>
+          <td id="tableheader">Base price:</td>
+          <td>$<span id="baseScoop">0.00</span></td>
+        </tr>
+        <tr>
+          <td id="tableheader">Toppings:</td>
+          <td>$ <span id="toppingTotal">0.00</span></td>
+        </tr>
+        <tr>
+          <td id="tableheader">Tax:</td>
+          <td>$<span id="tax">0.00</span></td>
+        </tr>
+        <tr>
+          <td id="tableheader">Total price:</td>
+          <td>$<span id="totalPrice">0.00</span></td>
+        </tr>
+      </table>
+    </div>
+    <script src="icecream.js"></script>
+  </body>
+</html>
